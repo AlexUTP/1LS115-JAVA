@@ -3,7 +3,7 @@ import java.util.*;
 class probl3 {
     public static void main(String[] args) {
 
-        Scanner sc= new Scanner (System.in);
+        Scanner sc = new Scanner (System.in);
         double lada, ladb, ladc, perimetro, area, sp;
 
         System.out.println("Ingrese el lado a: ");
@@ -17,7 +17,7 @@ class probl3 {
 
         perimetro = lada + ladb + ladc;
         sp = (lada + ladb + ladc) / 2;
-        area = (Math.sqrt(sp*(sp-lada) * (sp-ladb) * (sp-ladc)));
+        area = (Math.sqrt(sp * (sp - lada) * (sp - ladb) * (sp - ladc)));
 
         System.out.println("El area del triangulo es: " + area + " y el perimetro es: " + perimetro);
     }

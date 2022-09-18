@@ -27,7 +27,7 @@ class probl2 {
                 hipo = sc.nextDouble();
                 System.out.println("Ingrese cateto a: ");
                 cata = sc.nextDouble();
-                catb = Math.sqrt(Math.pow(hipo, 2)- Math.pow(cata, 2));
+                catb = Math.sqrt(Math.pow(hipo, 2) - Math.pow(cata, 2));
                 System.out.println("Su resultado es: " + catb);
                 break;
             case 3:
@@ -35,7 +35,7 @@ class probl2 {
                 cata = sc.nextDouble();
                 System.out.println("Ingrese cateto b: ");
                 catb = sc.nextDouble();
-                hipo = Math.sqrt(Math.pow(cata, 2)+ Math.pow(cata, 2));
+                hipo = Math.sqrt(Math.pow(cata, 2) + Math.pow(cata, 2));
                 System.out.println("Su resultado es: " + hipo);
                 break;
         }
