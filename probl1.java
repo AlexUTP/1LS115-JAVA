@@ -8,6 +8,6 @@ class probl1 {
         System.out.println("Introduce grados Centígrados: ");
         gradc = sc.nextFloat();
         gradf = 32 + (9 * gradc / 5);
-        System.out.println(gradc +" C = " + gradf + " F");                                                 
+        System.out.println(gradc + " C = " + gradf + " F");                                                 
   }
 }
