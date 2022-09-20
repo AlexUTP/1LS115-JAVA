@@ -1,6 +1,6 @@
 import java.util.*;
 
-class probl4 {
+public class probl4 {
     public static void main(String[] args){
         Scanner sc = new Scanner (System.in);
         int num;
@@ -22,5 +22,6 @@ class probl4 {
             }
         }
         System.out.println(num);
+        sc.close();
     }
 }

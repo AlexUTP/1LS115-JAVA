@@ -20,5 +20,6 @@ class probl3 {
         area = (Math.sqrt(sp * (sp - lada) * (sp - ladb) * (sp - ladc)));
 
         System.out.println("El area del triangulo es: " + area + " y el perimetro es: " + perimetro);
+        sc.close();
     }
 }

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class probl9 {
+public class probl9 {
     public static void main(String[] args){
         Scanner sc = new Scanner (System.in);
         char caracter; 
@@ -19,6 +19,7 @@ class probl9 {
                 System.out.println("ERROR: El caracter ingresado no es ASCII.");
             }
         }while(cierto);
+        sc.close();
     }
 }
 

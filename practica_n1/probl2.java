@@ -39,5 +39,6 @@ class probl2 {
                 System.out.println("Su resultado es: " + hipo);
                 break;
         }
+        sc.close();
     }
 }

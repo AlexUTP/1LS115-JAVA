@@ -1,6 +1,6 @@
 import java.util.*;
 
-class probl6 {
+public class probl6 {
     public static void main(String[] args){
         Scanner sc = new Scanner (System.in);
         int num, cont = 0, i, j;

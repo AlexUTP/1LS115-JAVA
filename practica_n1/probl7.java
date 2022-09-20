@@ -1,7 +1,7 @@
 import java.util.*;
 import java.text.DecimalFormat;
 
-class probl7 {
+public class probl7 {
     private static final DecimalFormat df = new DecimalFormat("0.00");
     public static void main(String[] args){
         Scanner sc = new Scanner (System.in);
@@ -37,5 +37,6 @@ class probl7 {
 
         System.out.println("El numero mayor es: "+ nummay + " y el numero menor es: " + nummen);
         System.out.println("El promedio es: " + df.format(prom / 3));
+        sc.close();
     }
 }
