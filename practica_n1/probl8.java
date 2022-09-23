@@ -3,7 +3,7 @@ import java.util.*;
 public class probl8 {
     public static void main(String[] args){
         Scanner sc = new Scanner (System.in);
-        int num;
+        int num, temp = 0;
         int decimal = 0;
         int p = 0;
 
@@ -15,7 +15,7 @@ public class probl8 {
                     break;
                 } 
                 else{
-                    int temp = num % 10;
+                    temp = num % 10;
                     decimal += temp * Math.pow(2, p);
                     num = num / 10;
                     p++;
