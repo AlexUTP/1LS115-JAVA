@@ -9,7 +9,7 @@ public class probl3{
         max = sc.nextInt();
         System.out.println("Su entrada es: " + max);
         System.out.print("Su salida es: 0 "); 
-        while (cont <= max) {//calcular la serie Fibonacci
+        while (cont <= max) {//ciclo para calcular la serie Fibonacci
           System.out.print(sum + " ");
           sum = num1 + num2;
           num1 = num2;
