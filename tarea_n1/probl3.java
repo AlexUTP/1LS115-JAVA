@@ -9,16 +9,18 @@ public class probl3{
         max = sc.nextInt();
         System.out.println("Su entrada es: " + max);
         System.out.print("Su salida es: 0 "); 
+        
         while (cont <= max) {//ciclo para calcular la serie Fibonacci
           System.out.print(sum + " ");
           sum = num1 + num2;
           num1 = num2;
           num2 = sum;
           cont++;
+          
         }//fin while
-    } catch (Exception e){//muestra el error
+    } catch (Exception e){
         System.out.print("ERROR: No introduciste un numero."); 
     }
-    sc.close();//cerrar scanner
-  }//fin main
-}//fin class
+    sc.close();
+  }
+}

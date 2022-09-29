@@ -12,7 +12,7 @@ public class probl5 {
             System.out.println("2. Calcular el area y el perimetro de un Triangulo");
             System.out.println("3. Calcular el area y el perimetro de un Trapecio");
             System.out.println("4. Calcular el area y el perimetro de un Circulo");
-            opc=sc.nextInt();//guardar opcion
+            opc = sc.nextInt(); //guardar opcion
             if (opc == 1) {
                 System.out.println("Introduzca el valor de la base: ");
                 base= sc.nextFloat();
@@ -33,9 +33,7 @@ public class probl5 {
                 c=sc.nextDouble();
                 perimetro=a+base+c;//calcular el perimetro del triangulo
                 s=perimetro/2;//hallar el semiperimetro
-                
                 area=Math.sqrt(s*(s-a)*(s-base)*(s-c));//calcular el area del triangulo
-
                 System.out.println("El valor del perimetro: "+perimetro);
                 System.out.println("El valor del area es de: "+area);
             }
@@ -62,14 +60,13 @@ public class probl5 {
                 radio= sc.nextFloat();
                 area=3.1416 * Math. pow(radio,2);//calcular el area del circulo
                 perimetro=2*3.1416*radio;//calcular del perimetro
-            
                 System.out.println("El valor del area es: "+area);
                 System.out.println("El valor del perimetro es: "+perimetro);
             }
             
-            System.out.println("Si desea calcular otra figura ingrese 5, de lo contrario ingrese 6");
+            System.out.println("Si desea calcular otra figura ingrese 5, de lo contrario ingrese 6.");
             opc=sc.nextInt();
         }while(opc!=6);//fin do while
-        sc.close();//cerrar scanner
-    }//fin main
-}//fin class
+        sc.close();
+    }
+}
