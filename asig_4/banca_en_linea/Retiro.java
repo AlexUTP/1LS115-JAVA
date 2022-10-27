@@ -27,6 +27,7 @@ public class Retiro {
                 System.out.println("Su saldo es de: " + saldoini);
             }//fin if
         } //fin while
+        leer.close();
         return saldoini;
     }//fin del metodo
 }//fin class

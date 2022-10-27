@@ -24,6 +24,7 @@ public class Deposito {
                 System.out.println("Su saldo es de: " + saldoinicial);
             }//fin if
         } //fin while
+        obtener.close();
         return saldoinicial;
     }//fin del metodo
 }//fin class
