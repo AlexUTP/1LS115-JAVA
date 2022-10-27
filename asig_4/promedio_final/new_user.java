@@ -1,29 +1,23 @@
 import java.util.*;
 
-public class new_user{
-    public static double[] NotaUsuario(){
-        Scanner sc = new Scanner(System.in);
-        double[] nota = new double[5];
+public class new_user {
+    public static void IngresarDatos(int cant) {
+        //Crear objeto de lectura
+        Scanner obtener = new Scanner(System.in);
+        //
+        variable objvar = new variable();
 
-        for(int i = 0; i < 5; i++){
-            System.out.print("Ingrese la nota ["+(i+1)+"]: ");
-            nota[i] = sc.nextDouble();
+        System.out.println("Ingrese su nombre: ");
+        objvar.name[cant] = obtener.nextLine();
+        System.out.println("Ingrese una contraseña: ");
+        objvar.password[cant] = obtener.nextLine();
+        while (true) {
+            for (int j = 0; j < 5; j++) {
+                System.out.print("Ingrese la nota [" + (j + 1) + "]: ");
+                objvar.notas[cant][j] = obtener.nextDouble();
+            }
+            break;
         }
-        sc.close();
-        return nota;
-    }
-
-    public static String[] NameContra(){
-        Scanner sc = new Scanner(System.in);
-        String[] nomb_pass = new String[2];
-
-        System.out.print("Ingrese el nombre del usuario: ");
-        nomb_pass[0] = sc.nextLine();
-
-        System.out.print("Ingrese la contrasena del usuario: ");
-        nomb_pass[1] = sc.nextLine();
-
-        sc.close();
-        return nomb_pass;
+        obtener.close();
     }
 }
