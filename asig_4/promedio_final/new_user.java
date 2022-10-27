@@ -1,20 +1,28 @@
+//Alexander Caballero 8-997-2227 || Nahin Mendoza 9-889-50 || Shaniska Walker 8-992-2056 || Camilo Yepes 20-14-6092
+
 import java.io.*;
 
 public class new_user {
-    public static void IngresarDatos(int cant) throws IOException{
+    public static String IngresarDatos(int aux, int j) throws IOException{
         //Crear objeto de lectura
         BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
-        //Crear objeto
-        variable objvar = new variable();
 
-        System.out.println("Ingrese su nombre: ");
-        objvar.name[cant] = bufer.readLine();
-        System.out.println("Ingrese una contraseña: ");
-        objvar.password[cant] = bufer.readLine();
-        //Guardar notas
-        for (int j = 0; j < 5; j++) {
+        if (aux ==1 ){
+            System.out.println("Ingrese su nombre: ");
+            String nombre = bufer.readLine();
+            return  nombre;
+        }
+        else if (aux == 2){
+            System.out.println("Ingrese una contraseña: ");
+            String contra = bufer.readLine();
+            return contra;
+        }
+
+        else if (aux == 3){
             System.out.print("Ingrese la nota [" + (j + 1) + "]: ");
-            objvar.notas[cant][j] = Integer.parseInt(bufer.readLine());
-        }//fin for
+            String notas = bufer.readLine();
+            return notas;
+        } //fin if
+        return "sin rsultados";
     }//fin metodo
 }//fin

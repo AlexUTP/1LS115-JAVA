@@ -1,19 +1,20 @@
+//Alexander Caballero 8-997-2227 || Nahin Mendoza 9-889-50 || Shaniska Walker 8-992-2056 || Camilo Yepes 20-14-6092
+
 import java.io.*;
 
 public class CambiarContra {
-    public static void ActualizarContrasena() throws IOException {
+    public static String ActualizarContrasena(String[] contrasenia) throws IOException {
         //Crear objeto de lectura
         BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
-        //Crear objeto
-        variable objvar = new variable();
 
-        System.out.println("Introduzca la contrasenia actual:");
-        System.out.println("Introduzca la contrasenia actual:");
-        String contra = bufer.readLine();
-        if (objvar.password[i] == contra) {
+        System.out.println("Introduzca su contrasenia:");
+        String user = bufer.readLine();
+        if (user.equals(contrasenia)) {
             System.out.println("Introduzca su nueva contrasenia:");
-            objvar.password[i] = bufer.readLine();
+            String contra = bufer.readLine();
             System.out.println("su contrasenia se ha cambiado con exito");
-        }//fin if
+            return contra;
+        }
+        return "Sin resultado";
     }//fin metodo
 }//fin class
