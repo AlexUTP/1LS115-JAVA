@@ -3,17 +3,18 @@
 import java.io.*;
 
 public class CambiarContra {
-    public static String ActualizarContrasena(String[] contrasenia) throws IOException {
+    public static String ActualizarContrasena(String aux) throws IOException {
         //Crear objeto de lectura
         BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Introduzca su contrasenia:");
-        String user = bufer.readLine();
-        if (user.equals(contrasenia)) {
+        System.out.println("Introduzca su contrasenia actual:");
+        String contra = bufer.readLine();
+        for (int i = 0; )
+        if (aux.equals(contra)) {
             System.out.println("Introduzca su nueva contrasenia:");
-            String contra = bufer.readLine();
+            String newcontra = bufer.readLine();
             System.out.println("su contrasenia se ha cambiado con exito");
-            return contra;
+            return newcontra;
         }
         return "Sin resultado";
     }//fin metodo

@@ -25,4 +25,4 @@ public class new_user {
         } //fin if
         return "sin rsultados";
     }//fin metodo
-}//fin
+}//fin 

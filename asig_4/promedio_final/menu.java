@@ -1,14 +1,17 @@
 //Alexander Caballero 8-997-2227 || Nahin Mendoza 9-889-50 || Shaniska Walker 8-992-2056 || Camilo Yepes 20-14-6092
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class menu {
     public static void main(String[] args) throws IOException {
         //Crear objeto de lectura
         BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
-        variable obj = new variable();
         //Declaracion de variables
         int opc = 0, cant = 0, j = 0;
+        ArrayList<String> name = new ArrayList<String>();
+        ArrayList<String> password = new ArrayList<String>();
+        String[][] notas = new String[5][5];
 
         while (opc != 5) {
             
@@ -23,10 +26,10 @@ public class menu {
             switch (opc) {
                 case 1:
                     if (cant < 5) {
-                        obj.name[cant] = new_user.IngresarDatos(1, j);
-                        obj.password[cant] = new_user.IngresarDatos(2, j);
+                        name.add(new_user.IngresarDatos(1, j));
+                        password.add(new_user.IngresarDatos(2, j));
                         while (j != 5){
-                            obj.notas[cant][j] = new_user.IngresarDatos(3, j);
+                            notas[cant][j] = new_user.IngresarDatos(3, j);
                             j++;
                         }
                         j = 0;
@@ -36,20 +39,18 @@ public class menu {
                         System.out.println("Ya se ha ingresado la cantidad maxima de usuarios.");
                     }
                     break;
-                case 2:
-                    for (int i = 0; i < obj.name.length; i++) {
-                        obj.password[i] = CambiarContra.ActualizarContrasena(obj.password);
-                    }
+                /*case 2:
                     
+                    password.set(j, null)
                     break;
                 case 3:
-                    break;
+                    break;*/
                 case 4:
-                    for (int i = 0; i < obj.name.length; i++) {
-                        ImprimirNombres.MostrarUsuariosCreados(obj.name, i);
-                    }
+                    ImprimirNombres.MostrarUsuariosCreados(name);
                     break;
-
+                case 5:
+                    System.out.println("Que tenga un lindo día");
+                    break;
                 default:
                     System.out.println("ERROR: No ha introducido ninguno de los valores anteriores.");
             }//fin switch case
