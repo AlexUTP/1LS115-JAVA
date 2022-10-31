@@ -42,9 +42,10 @@ public class menu {
                 /*case 2:
                     
                     password.set(j, null)
-                    break;
-                case 3:
                     break;*/
+                case 3:
+                    MostrarNotasPromedio.ImprimirPromedioNotas(notas,name);
+                    break;
                 case 4:
                     ImprimirNombres.MostrarUsuariosCreados(name);
                     break;
