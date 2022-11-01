@@ -31,18 +31,21 @@ public class menu {
                         while (j != 5){
                             notas[cant][j] = new_user.IngresarDatos(3, j);
                             j++;
-                        }
+                        }//fin while
                         j = 0;
                         cant = cant + 1;
                     } 
                     else {
                         System.out.println("Ya se ha ingresado la cantidad maxima de usuarios.");
+                    }//fin if
+                    break;
+                case 2:
+                    CambiarContra.ActualizarContrasena(password, name);
+                    //password.set(j, CambiarContra.ActualizarContrasena(password, name));
+                    for (String contrasenas : password) {
+                        System.out.println(contrasenas);
                     }
                     break;
-                /*case 2:
-                    
-                    password.set(j, null)
-                    break;*/
                 case 3:
                     MostrarNotasPromedio.ImprimirPromedioNotas(notas,name);
                     break;
